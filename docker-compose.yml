@@ -1,7 +1,8 @@
 version: '3'
 services:
   wishlist:
-    image: ajb3932/simple-wishlist:latest
+    # image: ajb3932/simple-wishlist:latest
+    build: .
     container_name: wishlist
     hostname: wishlist
     ports:
