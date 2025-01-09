@@ -19,6 +19,8 @@ It features a secure admin panel for adding and deleting items, while family and
 
 **Docker Compose:**
 
+Copy and paste this text into your `docker-compose.yml` file, make your own edits, and run it with `docker-compose up -d`
+
 ```yaml
 version: '3'
 services:
@@ -101,6 +103,13 @@ git clone https://github.com/ajb3932/simple-wishlist.git
 cd simple-wishlist
 docker build -t my-wishlist .
 docker run -d -p 8092:8092 -e DBHOST=10.0.0.10:27017 my-wishlist
+```
+
+🐳 Docker Compose (edit `docker-compose.yml` file before)
+``` bash
+git clone https://github.com/ajb3932/simple-wishlist.git
+cd simple-wishlist
+docker-compose up -d --build
 ```
 
 💾 Node.js
