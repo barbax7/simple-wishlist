@@ -273,9 +273,9 @@ app.post('/admin/delete-item/:id', auth, async (req, res) => {
 });
 
 app.get('/', async (req, res) => {
-    const wishlistItems = await Item.find({ purchased: false }).sort({ _id: -1 });
+    let wishlistItems = await Item.find({ purchased: false }).sort({ _id: -1 });
     const purchasedItems = await Item.find({ purchased: true }).sort({ _id: -1 });
-    
+    wishlistItems = wishlistItems.sort(() => Math.random() - 0.5);
     res.render('index', { 
         wishlistItems, 
         purchasedItems, 
