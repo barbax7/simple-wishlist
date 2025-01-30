@@ -9,9 +9,8 @@ services:
       - 8092:8092
     environment:
       - DBHOST=mongodb:27017
-      - CURRENCY=USD
-      - LIST_NAME=My Wishlist
-      - LIST_TYPE=bday
+    env_file:
+      - .env
     depends_on:
       - mongodb
 
