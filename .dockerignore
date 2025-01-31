@@ -5,3 +5,7 @@ Dockerfile
 .git
 .gitignore
 README.md
+.env
+docker-compose.yml
+access.log
+error.log

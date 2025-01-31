@@ -1,3 +1,5 @@
 .env
 .gitattributes
 node_modules
+access.log
+error.log

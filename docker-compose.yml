@@ -6,7 +6,7 @@ services:
     container_name: wishlist
     hostname: wishlist
     ports:
-      - 8092:8092
+      - 127.0.0.1:8092:8092
     environment:
       - DBHOST=mongodb:27017
     env_file:
